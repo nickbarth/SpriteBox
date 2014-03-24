@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="t3zNcOdTf1fF8OalPB0aQstXIZWte2y8ZcyMbGNHRo8" />
+    <title>Nick Barth</title>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Orbitron:400,500,900,700' rel='stylesheet' type='text/css'>
+    <link href="http://openfontlibrary.org/face/press-start-2p" rel="stylesheet" type="text/css"/>
+    <link href="./styles/application.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <div class="column-md-12 text-center">
+            <h1>Sprite Box</h1>
+            <h2>Quick and dirty setup for your sprite sheets</h2>
+            <img src="./images/box.png">
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Setup your Sheet</h3>
+            <form role="form" id="form">
+              <div class="form-group">
+                <label for="height-field">Sprite Height</label>
+                <input type="height" class="form-control" id="height-field" placeholder="Enter sprite height..." value="50">
+              </div>
+              <div class="form-group">
+                <label for="width-field">Sprite Width</label>
+                <input type="width" class="form-control" id="width-field" placeholder="Enter sprite width..." value="50">
+              </div>
+              <div class="form-group">
+                <label for="columns-field">Sprite Sheet Columns</label>
+                <input type="columns" class="form-control" id="columns-field" placeholder="Enter the number of columns..." value="10">
+              </div>
+              <div class="form-group">
+                <label for="rows-field">Sprite Sheet Rows</label>
+                <input type="rows" class="form-control" id="rows-field" placeholder="Enter the number rows..." value="10">
+              </div>
+              <button class="btn btn-warning" id="generate-btn">Generate Sprite Sheet</button>
+            </form>
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="canvas-container">
+              <canvas id="canvas"></canvas>
+            </div>
+            <a href="#" class="btn btn-warning" id="download-btn">Download Sprite Sheet</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4>&copy; <a href="#">Nick Barth</a> 2014</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
